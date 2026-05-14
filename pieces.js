@@ -230,6 +230,14 @@ buttonMettreAJour.addEventListener("click", () => {
   window.localStorage.removeItem("pieces");
 });
 
+//Ajout du listener pour gerer le dark mode
+const buttonDarkMode = document.querySelector(".btn-dark-mode");
+buttonDarkMode.addEventListener("click", () => {
+  const body = document.querySelector("body");
+
+  body.classList.toggle("dark-mode");
+});
+
 await afficherGraphiqueAvis();
 
 await afficherGraphiqueCommentaire();

@@ -102,3 +102,8 @@ button:active {
   background-color: black;
   color: #e0e0e0;
 }
+
+.fiches article:hover {
+	transform: scale(1.02);
+	transition: 0.3s ease;
+}
